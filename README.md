@@ -44,10 +44,10 @@ Four architectures were trained and evaluated on the combined **RLVS + RWF-2000*
 
 | # | Architecture | Backbone | Temporal Modeling | F1-Score | Notes |
 |:-:|:---|:---|:---|:---:|:---|
-| 🥇 | **VideoMAE** | ViT (Video Masked Autoencoder) | Self-Attention | **0.98** | **Best model — state-of-the-art** |
-| 🥈 | **YOLO + LSTM** | YOLOv8 (Object Detection) | BiLSTM | **0.96** | Strong detection-based approach |
-| 🥉 | **Pretrained R(2+1)D** | R(2+1)D-18 | 3D Convolutions | 0.93 | Solid spatiotemporal baseline |
-| 4 | **CNN-LSTM** | ResNet-50 (ImageNet V2) | BiLSTM | 0.91 | Classical two-stage pipeline |
+| 🥇 | **VideoMAE** | ViT (Video Masked Autoencoder) | Self-Attention | **0.982** | **Best model — state-of-the-art** |
+| 🥈 | **YOLO + LSTM** | YOLOv8 (Object Detection) | BiLSTM | **0.711** | Strong detection-based approach |
+| 🥉 | **Pretrained R(2+1)D** | R(2+1)D-18 | 3D Convolutions | 0.97 | Solid spatiotemporal baseline |
+| 4 | **CNN-LSTM** | ResNet-50 (ImageNet V2) | BiLSTM | 0.961 | Classical two-stage pipeline |
 
 > **Note:** The web app currently deploys the **CNN-LSTM** model for real-time inference via the FastAPI backend. VideoMAE and YOLO+LSTM models are also available in the `models/` directory.
 
